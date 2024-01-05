@@ -1,4 +1,4 @@
-import React ,{useState , useEffect} from 'react'
+import React ,{useState } from 'react'
 import {idealWeightOptions ,fetchData} from '../utils/fetchData'
 import {Box , TextField,MenuItem, Typography,Button} from '@mui/material'
 const IdealWeight = () => {

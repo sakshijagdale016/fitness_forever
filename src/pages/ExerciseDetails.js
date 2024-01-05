@@ -10,7 +10,7 @@ const ExerciseDetails = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
   const [exerciseVideos, setExerciseVideos] = useState([]);
   const [targetMuscleExercises, setTargetMuscleExercises] = useState([]);
-  const [equipmentExercises, setEquipmentExercises] = useState([]);
+  
 
   const {id} = useParams();
 
@@ -39,7 +39,7 @@ setTargetMuscleExercises(targetMuscleExercisesData);
     <Box>
         <Detail exerciseDetail={exerciseDetail}/>
         <ExerciseVideos  exerciseVideos = {exerciseVideos} name ={exerciseDetail.name} />
-        <SimilarExercises targetMuscleExercises={targetMuscleExercises} equipmentExercises={equipmentExercises}/>
+        <SimilarExercises targetMuscleExercises={targetMuscleExercises} />
     </Box>
   )
 
